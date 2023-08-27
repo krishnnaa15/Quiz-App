@@ -1,0 +1,577 @@
+ScreenManagement:
+    HomePage:
+    Q1:
+    Q2:
+    Q3:
+    Q4:
+    Q5:
+    Q6:
+    Q7:
+    Q8:
+    Q9:
+    Q10:
+    FinalPage:
+
+
+<HomePage>:
+    name:'home'
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source: 'home.jpg'
+        
+    
+    Button:
+        on_release:app.root.current = 'q1'
+        size_hint:.7,.2
+        pos_hint: {"x":0.15,"y":0.15}
+        background_normal:'btn.png'
+        background_down:'btn.png'
+                  
+<Q1>:
+    name:'q1'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'1. Who developed Python Programming Language?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Wick van Rossum'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0.0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'b. Rasmus Lerdorf'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Guido van Rossum'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'd. Niene Stom'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'home'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q2'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q2>:
+    name:'q2'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'2. What does pip stand for python?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Pip Installs Python'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Pip Installs Packages'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Preferred Installer Program'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. All of the mentioned'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q1'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q3'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q3>:
+    name:'q3'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'3. Amongst which of the following is / are the application areas of Python programming?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            text_size: self.width, None
+            
+        Button:
+            text: 'a. Web Development'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Game Development'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Artificial Intelligence and Machine Learning'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'd. All of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q2'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q4'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q4>:
+    name:'q4'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'4. list, tuple, and range are the ___ of Data Types.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Sequence Types'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'b. Binary Types'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Boolean Types'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q3'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q5'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q5>:
+    name:'q5'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'5. Python Dictionary is used to store the data in a ___ format.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Key value pair'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'b. Group value pair'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Select value pair'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q4'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q6'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q6>:
+    name:'q6'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'6. Conditional statements are also known as ___ statements.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Array'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Decision-making'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'c. List'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q5'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q7'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q7>:
+    name:'q7'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'7. In Python, ___ defines a block of statements.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Block'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'b. Loop'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Indentation'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q6'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q8'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q8>:
+    name:'q8'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'8. In Python, the break and continue statements, together are called ___ statement.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Jump'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. goto'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'c. compound'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q7'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q9'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q9>:
+    name:'q9'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'9. The for loop in Python is used to ___ over a sequence or other iterable objects.'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Jump'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Iterate'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'c. Switch'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q8'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'q10'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<Q10>:
+    name:'q10'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'10. Amongst which of the following shows the types of function calls in Python?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a. Call by value'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Call by reference'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Both A and B'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd. None of the mentioned above'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q9'
+                    background_normal:'backbtn.jpeg'
+                    background_down:'backbtn.jpeg'
+                Button:
+                    on_release:app.root.current = 'final'
+                    background_normal:'nextbtn.jpeg'
+                    background_down:'nextbtn.jpeg'
+
+<FinalPage>:
+    name:'final'
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source: 'final.png'
